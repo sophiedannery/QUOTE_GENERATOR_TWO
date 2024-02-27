@@ -14,8 +14,8 @@ body{
 }
 
 .container{
-    height: 200px;
-    width: 550px;
+    height: 275px;
+    width: 750px;
     background-color: #333;
     text-align: center;
 }
@@ -26,9 +26,11 @@ body{
     width: 250px;
     border-radius: 10px;
     font-size: 20px;
+    margin: 50px 0px
 }
 
 #output{
     font-size: 26px;
     color: #fff;
+    margin: 25px 0px;
 }
