@@ -17,12 +17,20 @@ function generateRandomNumber(num) {
 }
 
 
+//CHOISIR ET PUSH AFFIRMATION
+function generateAffirmation() {
+    let affirmationOfTheDay = variableAffirmations[generateRandomNumber(variableAffirmations.length)];
+    return "You are capable of " + affirmationOfTheDay + ". Believe in yourself!";
+}
 
-// CHOISIR UNE AFFIRMATION
-let affirmationOfTheDay = variableAffirmations[generateRandomNumber(variableAffirmations.length)];
 
-//PUSH AFFIRMATION DANS QUOTE
-let finaleQuote = "You are capable of " + affirmationOfTheDay + ". Believe in yourself!"
+//LOG AFFIRMATION
+function displayAffirmation(){
+    const affirmation = generateAffirmation();
+    document.getElementById('output').innerHTML = `<p>${affirmation}</p>`;
+}
 
-//LOG QUOTE
-console.log(finaleQuote);
+//FONCTION AU CLIC
+function generateAndDisplayAffirmation(){
+    displayAffirmation();
+}
